@@ -1,0 +1,44 @@
+<template data-entity-template="basket">
+    <div class="card-product" data-aos="fade-up" data-item-id="">
+        <div class="card-product__img">
+            <div class="catalog-card__labels only-desktop">
+            </div>
+            <picture>
+                <source srcset="" type="image/webp"/>
+                <img src="" alt=""/>
+            </picture>
+        </div>
+        <div class="card-product__info">
+            <div>
+                <div class="card-product__brand"></div>
+                <div class="card-product__ttl" data-field="name"></div>
+                <div class="card-product__txt"></div>
+            </div>
+            <button class="card-product__btn button--clean only-desktop" data-type="favor-add" data-id="<?= $productId ?>">В избранное</button>
+        </div>
+        <div class="card-product__nums">
+            <div class="card-product__add" data-number-goods>
+                <button class="button--clean hide" data-type="basket" data-additional='{"operator": "-"}'
+                        data-event="update" data-id="" data-number-goods-minus></button>
+                <span data-number-goods-count data-type="count-stepper"><?= $quantity ?></span>
+                <button class="button--clean plus" data-type="basket" data-additional='{"operator": "+"}'
+                        data-event="update" data-id="" data-number-goods-plus></button>
+            </div>
+            <div class="catalog-card__price">
+                <div>
+                    <span class="current">
+                        <span data-type="calc-price" data-field="price"></span> ₽
+                    </span>
+                    <span class="old" data-field="full-price"></span>
+                </div>
+            </div>
+            <div class="card-product__amount" data-field="count-price"></div>
+        </div>
+        <div class="card-product__last-col">
+            <button class="card-product__btn button--clean" data-popup-button="6" data-type="transfer-data"
+                    data-transfer="" data-success="[data-event=delete]">Удалить
+            </button>
+            <button class="card-product__btn button--clean only-mobile" data-type="favor-add" data-id="">В избранное</button>
+        </div>
+    </div>
+</template>

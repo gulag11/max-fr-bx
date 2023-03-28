@@ -1,0 +1,38 @@
+<template data-entity-template="basket">
+    <div class="product-list__card" data-item-id="" data-type="item-modal" data-product-id="">
+        <div class="product-list__img">
+            <picture>
+                <source srcset="" type="image/webp"/>
+                <img src="" alt=""/>
+            </picture>
+        </div>
+        <div class="product-list__info">
+            <div class="product-list__brand" data-field="manufacturer"></div>
+            <div class="product-list__ttl" data-field="name"></div>
+            <div class="card-product__add" data-number-goods="data-number-goods">
+                <button class="button--clean hide" data-number-goods-minus="data-number-goods-minus" data-type="basket"
+                        data-additional='{"operator": "-"}' data-event="update" data-id=""></button>
+                <span data-number-goods-count="data-number-goods-count" data-type="count">1</span>
+                <button class="button--clean plus" data-number-goods-plus="data-number-goods-plus"
+                        data-type="basket" data-additional='{"operator": "+"}' data-event="update"
+                        data-id=""></button>
+            </div>
+        </div>
+        <div class="product-list__col">
+            <div>
+                <div class="catalog-card__price">
+                    <div>
+                        <span class="current">
+                            <span data-type="calc-price" data-field="price"></span> ₽</span>
+                        <span class="old" data-field="full-price"></span>
+                    </div>
+                </div>
+                <div class="card-product__amount"><span data-type="count"></span><span data-field="count-price"></span>
+                </div>
+            </div>
+            <button class="product-list__del button--clean" data-type="basket" data-event="delete"
+                    data-id="">Удалить
+            </button>
+        </div>
+    </div>
+</template>
